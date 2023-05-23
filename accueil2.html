@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2</title>
+    <link rel="stylesheet" href="./portfolio2.css" />
+  </head>
+  <body>
+
+    <!-- Barre de navigation -->
+    <header>
+      <nav>
+        <h1>Quentin Gillet</h1>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section home -->
+    <section id="accueil">
+      <p>Développeur web et mobile</p>
+      <a href="#portfolio" class="button">Mon Portfolio</a>
+    </section>
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+        euismod vitae arcu quis euismod. Donec id ex felis. Vivamus eu
+        velit quis lacus luctus auctor. Aenean sit amet urna dui. Sed
+        pharetra felis vitae velit laoreet viverra. Nam dapibus sapien
+        sed diam ultrices, ac fermentum ipsum aliquam. Sed volutpat
+        risus elit, ac elementum leo malesuada vel. Nulla facilisi. Sed
+        posuere nisl vel arcu varius, sit amet tristique velit ultricies.
+      </p>
+    </section>
+    
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img">
+            <img src="img/project1.jpg" alt="Projet 1" width="200" height="150"/>
+          </div>
+          <div class="card-content">
+            <h3>Projet 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec ut massa dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/project2.jpg" alt="Projet 2" />
+          </div>
+          <div class="card-content">
+            <h3>Projet 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec ut massa dolor.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/project3.jpg" alt="Projet 3" />
+          </div>
+          <div class="card-content">
+            <h3>Projet 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec ut massa dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#">
+        <input type="text" placeholder="Nom" />
+        <input type="email" placeholder="Email" />
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="legal">
+          <p>&copy; 2023 John Doe. Tous droits réservés.</p>
+          <p>Mentions légales</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+

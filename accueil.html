@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mon Portfolio</title>
+        <link rel="stylesheet" href="./portfolio.css" />
+    </head>
+
+    <body>
+        
+
+        <!-- Barre de navigation -->
+        <header>
+            <nav>
+                <div>
+                    <img id="hamburger" src="./img/hamburger-menu.png" alt="Menu" 
+                    onclick="document.getElementById('menu').style.display='flex'"
+                    ondblclick="document.getElementById('menu').style.display='none'">
+                    <h1>Quentin Gillet</h1>
+                </div>
+                <ul id="menu">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#travaux">Travaux</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <!-- Section accueil -->
+        <section id="accueil">
+            <div>
+                <p>Développeur web et mobile</p>
+                <a href="#travaux" class="button">Mon Portfolio</a>
+            </div>
+        </section>
+
+        <!-- Section à propos -->
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                euismod vitae arcu quis euismod. Donec id ex felis. Vivamus eu
+                velit quis lacus luctus auctor. Aenean sit amet urna dui. Sed
+                pharetra felis vitae velit laoreet viverra. Nam dapibus sapien
+                sed diam ultrices, ac fermentum ipsum aliquam. Sed volutpat
+                risus elit, ac elementum leo malesuada vel. Nulla facilisi. Sed
+                posuere nisl vel arcu varius, sit amet tristique velit ultricies.
+            </p>
+        </section>
+
+        <!-- Section travaux -->
+        <section id="travaux">
+            <h2>Portfolio</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/project1.jpg" alt="Projet 1" width="200" height="150" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Projet 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec ut massa dolor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section contact -->
+        <section id="contact">
+                <h2>Contactez-moi</h2>
+                <form action="#" method="post">
+                    <div>
+                        <div>
+                            <label for="nom">Nom :</label>
+                            <label for="email">Email :</label>
+                            <label for="message">Message :</label>
+
+                        </div>
+                        <div>
+                            <input type="text" id="nom" name="nom" required>
+                            <input type="email" id="email" name="email" required>
+                            <textarea id="message" name="message" required></textarea>
+                        </div> 
+                    </div> 
+                    <input type="submit" value="Envoyer">
+                </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="legal">
+                    <p>&copy; 2023 Quentin Gillet. Tous droits réservés.</p>
+                    <p>Mentions légales</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
