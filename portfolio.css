@@ -78,11 +78,11 @@ nav ul li a:hover {
 /*--- Sections ---*/
 
 section{
-  padding-top: 87px;
+  padding-top: 12vh;
 }
 
 section{
-  height: 100vh;
+  height: 88vh;
 }
 
 /*--- Section accueil ---*/
@@ -91,7 +91,6 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px;
   background-image: url(./img/fond\ paysage.jpg);
   background-size: cover;
 }
@@ -105,7 +104,7 @@ section{
 
 
 /*--- section contact ---*/
-
+/*  
 #contact{
   display: flex;
   flex-direction: column;
@@ -151,7 +150,17 @@ section{
 #contact form input, textarea{
   min-width: 80px;
 }
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  gap: 10px;
+}
 
+.grid-item {
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 
 
