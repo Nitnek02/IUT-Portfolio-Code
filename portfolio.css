@@ -26,6 +26,7 @@ header{
   width: 100%;
   background-color: black;
   opacity: 0.8;
+  box-shadow: 0px 2px 6px #00BFFF;
 }
 
 #hamburger{
@@ -36,12 +37,13 @@ nav{
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0px 2px 6px #00BFFF;
+
 }
 
 nav div{
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -79,9 +81,6 @@ nav ul li a:hover {
 
 section{
   padding-top: 12vh;
-}
-
-section{
   height: 88vh;
 }
 
@@ -105,11 +104,11 @@ section{
 
 .grid-container {
   display: grid;
-  gap: 30px;
 }
 
 .grid-item {
   box-sizing: border-box;
+  margin-bottom: 5vh;
 }
 
 #contact{
@@ -117,13 +116,12 @@ section{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 0px;
+  height: 80vh;
 }
 
 #contact>div:first-child{
   width: 30vw;
-  height: 89.5vh;
-  margin-top: 10.5vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +136,6 @@ section{
 #contact form{
   width: 44vw;
   height: 70vh;
-  margin-top: 10vh;
   margin-left: 8vw;
   margin-right: 8vw;
   display: flex;
@@ -149,15 +146,13 @@ section{
   border-top: solid 5px #00BFFF;
 }
 
-#contact form div div input, #message{
-  max-width: 560px;
-  max-height: 48.4px;
+#contact form div div textarea{
+  max-height: none;
 }
 
 #contact h2{
   font-size: 25px;
   margin-bottom: 5vh;
-  margin-top: 20px;
 }
 
 #nom, #prenom, #email, #message{
@@ -165,6 +160,8 @@ section{
   display: flex;
   align-items: center;
   padding: 1vw;
+  max-width: 560px;
+  max-height: 48.4px;
 }
 
 #contact form div div:last-child, #contact h2{
@@ -178,7 +175,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
+  padding: 10px;
   cursor: pointer;
   background-color: #504f5f;
   border: 2px solid #00BFFF;
@@ -200,17 +197,27 @@ section{
   color: white;
 }
 
+#footer div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2vh;
+}
 
 /*--- options taille écran ---*/
 
 @media screen and (max-width: 785px) {
 header{
   width: auto;
+  background-color: black;
+  padding: 10px;
 }
 nav{
   flex-direction: column;
-  height: 82.8px;
-
+}
+nav div{
+  display: flex;
+  align-items: center;
 }
 #hamburger{
   width: 50px;
