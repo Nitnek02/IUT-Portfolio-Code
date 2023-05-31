@@ -36,7 +36,7 @@ nav{
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-shadow: 0px 2px 6px rgb(71, 154, 205);
+  box-shadow: 0px 2px 6px #00BFFF;
 }
 
 nav div{
@@ -70,8 +70,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 7px solid rgb(71, 154, 205);
-  color: rgb(71, 154, 205);
+  border-bottom: 7px solid #00BFFF;
+  color: #00BFFF;
 }
 
 
@@ -91,8 +91,6 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/fond\ paysage.jpg);
-  background-size: cover;
 }
 
 #accueil div{
@@ -104,53 +102,7 @@ section{
 
 
 /*--- section contact ---*/
-/*  
-#contact{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-#contact form{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 40%;
-  width: 60%;
-  padding-bottom: 60px;
-}
-
-#contact form div{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
-}
-
-#contact form div div{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
-
-#contact form div div label{
-  min-width: 78px;
-}
-
-#contact form div div:last-child *{
-  height: 25px;
-  border: solid 1px;
-  border-radius: 5px;
-}
-
-#contact form input, textarea{
-  min-width: 80px;
-}
-*/
 .grid-container {
   display: grid;
   gap: 30px;
@@ -177,6 +129,9 @@ section{
   justify-content: center;
   padding-left: 10vw;
   background-color: #2f2e31;
+}
+
+#contact>div:first-child p, h3{
   color: white;
 }
 
@@ -188,14 +143,21 @@ section{
   margin-right: 8vw;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  border-bottom: solid 5px rgb(71, 154, 205);
-  border-top: solid 5px rgb(71, 154, 205);
+  border-bottom: solid 5px #00BFFF;
+  border-top: solid 5px #00BFFF;
+}
+
+#contact form div div input, #message{
+  max-width: 560px;
+  max-height: 48.4px;
 }
 
 #contact h2{
   font-size: 25px;
   margin-bottom: 5vh;
+  margin-top: 20px;
 }
 
 #nom, #prenom, #email, #message{
@@ -212,24 +174,28 @@ section{
 
 #envoyer{
   width: 10vw;
-  margin-top: 4vh;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1vw;
   cursor: pointer;
   background-color: #504f5f;
-  border: 2px solid rgb(71, 154, 205);
+  border: 2px solid #00BFFF;
   color: white;
   transition: all 0.2s ease-in-out;
+  min-height: 40px;
+  min-width: 85px;
+  max-width: 108px;
+  max-height: 16.4px;
 }
 
 #envoyer:hover{
-  color: rgb(71, 154, 205);
+  color: #00BFFF;
 }
 
 #envoyer:active{
-  background-color: rgb(71, 154, 205);
+  background-color: #00BFFF;
   border: 2px solid white;
   color: white;
 }
