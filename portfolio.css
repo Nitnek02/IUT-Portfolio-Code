@@ -12,6 +12,7 @@ html{
   width: 100%;
   height: 100%;
   background-color: #504f5f;
+
 }
 
 h2, h1{
@@ -88,16 +89,35 @@ section{
 
 #accueil{
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
-#accueil div{
+#accueil>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 100px;
+  border-top: solid 15px #00BFFF;
+  border-bottom: solid 15px #00BFFF;
+}
+
+#accueil div div{
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 30vh;
+  border-left: solid 12px #00BFFF;
+  border-right: solid 12px #00BFFF;
 }
+
+#accueil h4{
+  font-size: 60px;
+  color: #00BFFF;
+}
+
 
 
 /*--- section contact ---*/
@@ -238,6 +258,13 @@ nav ul li a{
 nav h1{
   padding-left: 3px;
   margin-left: 0px;
+}
+
+#accueil div div{
+  min-width: 315px;
+}
+#accueil>div{
+  margin: 10vw;
 }
 
   
