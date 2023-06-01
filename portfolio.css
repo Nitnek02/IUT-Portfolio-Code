@@ -118,6 +118,16 @@ section{
   color: #00BFFF;
 }
 
+/*--- section profil ---*/
+
+#apropos div{
+  display: flex;
+}
+
+.flippable {
+  border-radius: 15px;
+}
+
 
 
 /*--- section contact ---*/
@@ -134,30 +144,42 @@ section{
 #contact{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+
   align-items: center;
   height: 80vh;
 }
 
-#contact>div:first-child{
-  width: 30vw;
+#images-contact{
   height: 70vh;
+  padding-left: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10vw;
   background-color: #2f2e31;
 }
 
-#contact>div:first-child p, h3{
+#images-contact img{
+  padding: 20px;
+}
+
+#contact>div:nth-child(2){
+  width: 30vw;
+  height: 70vh;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2f2e31;
+}
+
+#contact>div:nth-child(2) p, h3{
   color: white;
 }
 
 #contact form{
   width: 44vw;
   height: 70vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin:auto;
   display: flex;
   justify-content: center;
   align-items: center;
