@@ -27,7 +27,7 @@ header{
   width: 100%;
   background-color: black;
   opacity: 0.8;
-  box-shadow: 0px 2px 6px #00BFFF;
+  box-shadow: 0px 2px 6px #67fff5;
 }
 
 #hamburger{
@@ -73,13 +73,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 7px solid #00BFFF;
-  color: #00BFFF;
+  border-bottom: 7px solid #67fff5;
+  color: #67fff5;
 }
 
 nav .active{
-  color: #00BFFF;
-  border-bottom: 7px solid #00BFFF;
+  color: #67fff5;
+  border-bottom: 7px solid #67fff5;
 }
 
 /*--- Sections ---*/
@@ -93,7 +93,8 @@ section{
 
 #accueil{
   display: flex;
-
+  background-image: url(./img/32941682_347317299795.jpg);
+  background-size: cover;
 }
 
 #accueil>div{
@@ -102,8 +103,7 @@ section{
   align-items: center;
   width: 100%;
   margin: 100px;
-  border-top: solid 15px #00BFFF;
-  border-bottom: solid 15px #00BFFF;
+
 }
 
 #accueil div div{
@@ -113,13 +113,22 @@ section{
   align-items: center;
   width: 50vw;
   height: 30vh;
-  border-left: solid 12px #00BFFF;
-  border-right: solid 12px #00BFFF;
+
 }
 
-#accueil h4{
-  font-size: 60px;
-  color: #00BFFF;
+#accueil h4:first-child{
+  font-size: 8vw;
+  color: white;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  text-shadow: 4px 2px 6px #67fff5;
+}
+
+#accueil h4:last-child{
+  font-size: 8vw;
+  color: white;
+  margin-right: 30px;
+  text-shadow: 4px 2px 6px #67fff5;
 }
 
 /*--- section a propos ---*/
@@ -254,8 +263,8 @@ section{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-bottom: solid 5px #00BFFF;
-  border-top: solid 5px #00BFFF;
+  border-bottom: solid 5px #67fff5;
+  border-top: solid 5px #67fff5;
 }
 
 #contact form div div textarea{
@@ -290,9 +299,9 @@ section{
   padding: 10px;
   cursor: pointer;
   background-color: #504f5f;
-  border: 2px solid #00BFFF;
+  border: 2px solid #67fff5;
   color: white;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   min-height: 40px;
   min-width: 85px;
   max-width: 108px;
@@ -300,20 +309,28 @@ section{
 }
 
 #envoyer:hover{
-  color: #00BFFF;
+  color: #67fff5;
+  background-color: #2f2e31;
 }
 
 #envoyer:active{
-  background-color: #00BFFF;
+  background-color: #67fff5;
   border: 2px solid white;
   color: white;
 }
+
+/*--- footer ---*/
+
 
 #footer div{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2vh;
+}
+
+#footer p{
+  color: white;
 }
 
 /*--- options taille écran ---*/
@@ -362,3 +379,106 @@ nav h1{
   
 }
 
+
+
+
+
+
+
+
+
+/*--- div s1.01/03 ---*/
+
+.S1{
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 2vh;
+}
+
+#S1{
+  height: auto;
+  padding-top: 13vh;
+}
+
+.S1>div{
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 4vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.S1>div h3{
+  padding: 20px;
+  color: black;
+  font-size: 22px;
+  text-shadow: 2px 3px 1px #67fff5;
+}
+
+.S1>div p{
+  padding: 20px;
+  font-size: 18px;
+}
+
+.S1-01{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.S1>div div #results{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 30vw;
+  height: auto;
+}
+
+.S1-03, .S1-04 {
+  display: flex;
+  flex-direction: column;
+}
+
+.S1>div div #empreinte{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+
+.S1>div div #requete{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+
+.S1-05{
+  display: flex;
+  flex-direction: column;
+}
+
+.S1>div .S1-05 div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.S1>div div #conception{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 30vw;
+  height: fit-content;
+}
+
+.S1>div div #codehtml{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 40vw;
+  height: fit-content;
+}
