@@ -387,20 +387,20 @@ nav h1{
 
 
 
-/*--- div s1.01/03 ---*/
+/*--- Page S1/S2 ---*/
 
-.S1{
+.S1, .S2{
   height: auto;
   padding-top: 0px;
   padding-bottom: 2vh;
 }
 
-#S1{
+#S1, #S2{
   height: auto;
   padding-top: 13vh;
 }
 
-.S1>div{
+.S1>div, .S2>div{
   display: flex;
   flex-direction: column;
   padding: 60px;
@@ -411,17 +411,20 @@ nav h1{
   border-radius: 15px;
 }
 
-.S1>div h3{
+.S1>div h3, .S2>div h3{
   padding: 20px;
   color: black;
   font-size: 22px;
   text-shadow: 2px 3px 1px #67fff5;
 }
 
-.S1>div p{
+.S1>div p, .S2>div p{
   padding: 20px;
   font-size: 18px;
 }
+
+
+/*--- Page S1 ---*/
 
 .S1-01{
   display: flex;
@@ -436,7 +439,7 @@ nav h1{
   height: auto;
 }
 
-.S1-03, .S1-04 {
+.S1-03{
   display: flex;
   flex-direction: column;
 }
@@ -447,6 +450,11 @@ nav h1{
   width: 80vw;
   height: auto;
   margin: auto;
+}
+
+.S1-04{
+  display: flex;
+  flex-direction: column;
 }
 
 .S1>div div #requete{
@@ -481,4 +489,20 @@ nav h1{
   box-shadow: 7px 6px 6px #67fff5;
   width: 40vw;
   height: fit-content;
+}
+
+
+/*--- Page S2 ---*/
+
+.S2-03{
+  display: flex;
+  flex-direction: column;
+}
+
+.S2>div div #table{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 50vw;
+  height: auto;
+  margin: auto;
 }
