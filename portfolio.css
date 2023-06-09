@@ -506,3 +506,16 @@ nav h1{
   height: auto;
   margin: auto;
 }
+
+.S2-04{
+  display: flex;
+  flex-direction: column;
+}
+
+.S2>div div #vue{
+  border-radius: 15px;
+  box-shadow: 7px 6px 6px #67fff5;
+  width: 50vw;
+  height: auto;
+  margin: auto;
+}
